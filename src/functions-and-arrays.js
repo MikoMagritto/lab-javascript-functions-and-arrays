@@ -95,12 +95,6 @@ function averageWordLength (wordsArr){
 // Iteration #5: Unique arrays
 // tentative iteration 5 mais echec...
 
-/*function uniquifyArray (words) {
-  for (i=0; i>= words.length-1; i++) {
-  let index = words.indexOf (words [i],i +1);
-  }
-}
-
 const wordxs = [
   'crab',
   'poison',
@@ -131,7 +125,7 @@ function uniquifyArray (wordsUnique) {
   }
   return wordsUnique;
 }
-uniquifyArray (wordxs);*/
+uniquifyArray (wordxs);
 
 // Iteration #6: Find elements
 
