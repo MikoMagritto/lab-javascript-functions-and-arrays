@@ -152,7 +152,18 @@ doesWordExist(wordsi, 'fgh');
 
 
 // Iteration #7: Count repetition
-const wordsCount = [
+
+function howManyTimes(words, search) {
+  let counter = 0;
+  for (i = 0; i <= words.length - 1; i++) {
+    if (words[i] === search) { 
+      counter++; 
+      }  
+  }
+  return counter;
+}
+
+const newWords = [
   'machine',
   'matter',
   'subset',
@@ -165,6 +176,8 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
+
+howManyTimes(newWords,'matter');
 
 // Iteration #8: Bonus
 
