@@ -85,20 +85,18 @@ const wordxs = [
 ];
 
 function uniquifyArray (wordsUnique) {
-  var indice = [];
+  var newArray = [];
   if (wordsUnique.length == 0){
     return null;
   }
   for(let i= 0; i<wordsUnique.length; i++){
-    indice = wordsUnique.indexOf(wordsUnique[i]);
-    if (indice.length>1){
-      for(let j= 1; j<indice.length; j++){
-        wordsUnique.splice(indice[j],1);
-      }
+    var indice = [];
+    indice.push(wordsUnique.indexOf(wordsUnique[i]));
+    if(i==indice[0]){
+      newArray.push(wordsUnique[i]);
     }
-
   }
-  return wordsUnique;
+  return newArray;
 }
 uniquifyArray (wordxs);
 
